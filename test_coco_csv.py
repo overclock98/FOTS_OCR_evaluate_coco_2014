@@ -254,7 +254,7 @@ def main(argv=None):
 
             df = pd.DataFrame()
             for iteration, im_fn in enumerate(im_fn_list):                
-                if iteration%50 == 0:  print(iteration,os.path.basename(im_fn).split('.')[0][-6:])
+                if iteration%50 == 0:  print(iteration,os.path.basename(im_fn).split('.')[0])
                 else :  print(iteration,os.path.basename(im_fn).split('.')[0][-6:], end =" ")
                 
                 im = cv2.imread(im_fn)[:, :, ::-1]
